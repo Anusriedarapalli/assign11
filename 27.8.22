@@ -1,0 +1,43 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+ char first[50],second[50];
+ int lenght1,lenght2,found=0,not_found=0;
+ printf("first string");
+ scanf("%s",arr1);
+ printf("second string");
+ scanf("%s",arr2);
+ len1=strlen(arr1);
+ len2=strlen(arr2);
+ if(len1==len2)
+ {
+  num=len1;
+  for(i=0;i<num;i++)
+  { 
+   found=0;
+   for(j=0;j<num;j++)
+   {
+    if(arr1[i]==arr2[j])
+    {
+      found=1;
+      break;
+    }
+   }
+   if(found==0)
+   { 
+    not_found=1;
+    break;
+   }
+ }
+ if(not_found==1)
+ printf("\n the first string is not an anagram of the second string");
+ else
+ printf("\nthe first is an anagram of the second string");
+ return 0;
+}
+
+output: 
+first string : silence
+second string : lensice
+the first string is an anagram of the second string
